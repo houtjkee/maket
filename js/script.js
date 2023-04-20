@@ -13,3 +13,13 @@ $(document).ready(function(){
         fade: true,
         autoplaySpeed: 4000});
 });
+
+$(document).ready(function(){
+    $('.categories-auto, .categories-tech, .categories-mobile, .categories-pc, .categories-clothes, .categories-realty').mouseenter(function(){
+        $(this).find('ul').show();
+    });
+
+    $('.categories-auto, .categories-tech, .categories-mobile, .categories-pc, .categories-clothes, .categories-realty').mouseleave(function(){
+        $(this).find('ul').hide();
+    });
+});

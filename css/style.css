@@ -252,6 +252,133 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
         background: url('../images/next_button.png') 0 0 / 100% no-repeat;
     }
 
+    .content {
+        max-width: 980px;
+        height: 100%;
+        margin: 0 auto;
+    }
+
+    .breadcrumb {
+        margin-top: 10px;
+        font-size: 14px;
+        color: #767676;
+        font-family: 'PT Sans', sans-serif;
+        margin-bottom: 26px;
+        display: inline-block;
+    }
+
+    .breadcrumb ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+
+    .breadcrumb li {
+        margin-right: 10px;
+    }
+
+    .breadcrumb li:last-child {
+        margin-right: 0;
+    }
+
+    .breadcrumb a {
+        color: #767676;
+        text-decoration: none;
+    }
+
+    .breadcrumb a:hover {
+        text-decoration: underline;
+    }
+
+    .categories-goods {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .categories {
+        width: 178px;
+        height: auto;
+        font-size: 18px;
+        color: #767676;
+        font-family: 'PT Sans', sans-serif;
+        line-height: 30px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .categories a {
+        color: #767676;
+        text-decoration: none;
+    }
+
+    .categories a:hover {
+        color: #444444;
+        text-decoration: underline;
+    }
+
+    .categories p:hover {
+        color: #444444;
+        text-decoration: underline;
+    }
+
+    .categories ul li {
+        font-size: 14px;
+        list-style-type: disc;
+        margin-left: 10%;
+        line-height: 22px;
+    }
+
+    .categories ul a {
+        list-style: none;
+    }
+
+    .categories-auto ul,
+    .categories-tech ul,
+    .categories-mobile ul,
+    .categories-pc ul,
+    .categories-clothes ul,
+    .categories-realty ul {
+        display: none;
+    }
+
+    .price-list {
+        width: 178px;
+        height: auto;
+        margin-top: 55%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        line-height: 6px;
+    }
+
+    .price-list-text {
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 25px;
+        color: #444444;
+        font-family: 'PT Sans', sans-serif;
+    }
+
+    .price-list-text:hover {
+        text-decoration: none;
+    }
+
+    .goods-container {
+        height: 780px;
+        width: 780px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .goods {
+        background-color: #dcdcdc;
+        width: 250px;
+        height: 380px;
+        
+    }
+
     @media (max-width: 980px) {
         .container {
             max-width: 768px;
