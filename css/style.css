@@ -43,11 +43,10 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 	color: red;
 }
 
-    .page {
-        overflow: hidden;
+    .wrapper {
+        min-height: 100%;
         display: flex;
         flex-direction: column;
-        min-height: 100%;
     }
 
     .header {
@@ -57,6 +56,8 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 
     .main {
         flex-grow: 1;
+        flex-shrink: 0;
+        flex-basis: auto;
     }
     
     .container {
@@ -511,6 +512,9 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
         justify-content: space-evenly;
         align-items: center;
         margin-top: 200px;
+        flex-grow: 0;
+        flex-shrink: 0;
+        flex-basis: auto;
     }
     
 
@@ -567,6 +571,126 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
         font-family: "PT Sans";
         font-size: 14px;
     }
+
+.modal { 
+    position: fixed; 
+    z-index: 1050; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; 
+    background-color: rgba(0, 0, 0, 0.4); 
+  }
+  
+  .modal-content {
+    background-color: #ffffff;
+    margin: auto; 
+    padding-right: 63px;
+    padding-left: 63px;
+    border: 1px solid #888;
+    width: 466px;
+    height: 578px;
+  }
+
+  .modal-content h2 {
+    text-align: center;
+    margin-bottom: 35px;
+    margin-top: 35px;
+    font-family: "PT Sans";
+    font-size: 24px;
+    font-weight: 700;
+    color: #535353;
+    text-transform: uppercase;
+  }
+  
+  .close {
+    position: absolute;
+    height: 27px;
+    width: 27px;
+    background-color: #777777;
+    color: #ffffff;
+  }
+  
+  .close:hover,
+  .close:focus {
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  label {
+    font-size: 14px;
+    font-weight: 400;
+    color: #535353;
+    font-family: "PT Sans";
+    margin-bottom: 7px;
+  }
+  
+  input[type="text"],
+  input[type="email"]
+  {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+  }
+
+  input[type="number"] {
+    padding: 10px;
+    margin-bottom: 22px;
+    border: 1px solid #ccc;
+  }
+
+  textarea {
+    padding: 10px;
+    margin-bottom: 22px;
+    border: 1px solid #ccc;
+    width: 339px;
+    height: 140px;
+  } 
+  
+  button[type="submit"] { 
+    background-color: #777777;
+    padding: 10px;
+    cursor: pointer;
+    width: 128px;
+    height: 42px;  
+    color: #ffffff;
+    font-family: "PT Sans";
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    align-items: center;
+    }
+
+    .modal.show { display: block; }
+
+.modal-content { 
+    animation-name: modalopen; 
+    animation-duration: 0.5s; }
+    @keyframes modalopen { 
+        from {opacity: 0;} to {opacity: 1;} 
+    }
+
+    .modal.hide .modal-content { 
+    animation-name: modalclose; 
+    animation-duration: 0.5s; 
+}
+
+    @keyframes modalclose { 
+        from {opacity: 1;} to {opacity: 0;} 
+    }
+
+.modal.hide { display: none; }
+
+.modal-content input:focus, 
+.modal-content textarea:focus { 
+    background-color: #f2f2f2; }
 
     @media (max-width: 990px) {
         .container {

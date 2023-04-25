@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="../maket/css/style.css">
 </head>
 <body>
- <div class="page">  
+ <div class="wrapper">  
   <header class="header">
     <div class="container">
       <div class="logo-and-info">
@@ -27,7 +27,7 @@
         <a href="tel:+380997775432">+38 (099) 77-75-432</a><br>
         <a href="tel:+380957773456">+38 (095) 77-73-456</a><br>
         <div class="contact-us">
-          <a href="#">Зв'яжіться з нами</a>
+          <a href="#" id="contact-us">Зв'яжіться з нами</a>
         </div>
       </div>
     </div>
@@ -225,6 +225,23 @@
         компанія "Піксель плюс"</p>
     </div>
   </footer>
+<div class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Зворотній зв'язок</h2>
+    <form>
+      <label for="name">Ваше ім'я</label>
+      <input type="text" id="name" name="name">
+      <label for="name">Телефон</label>
+      <input type="number" id="number" name="name">
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email">
+      <label for="message">Повідомлення</label>
+      <textarea id="message" name="message"></textarea>
+      <button type="submit">Відправити</button>
+    </form>
+  </div>
+</div>
 </div>
   <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
   <script src="./js/slick.min.js"></script>
