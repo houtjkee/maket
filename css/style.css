@@ -509,8 +509,10 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
+        align-items: center;
         margin-top: 200px;
     }
+    
 
     .company-mail {
         display: flex;
@@ -520,6 +522,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
         font-family: "PT Sans";
         font-size: 14px;
         line-height: 22px;
+        padding-bottom: 75px;
     }
 
     .company-mail a {
@@ -547,6 +550,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
+        padding-bottom: 75px;
     }
 
     .aboutcompany p {
@@ -895,10 +899,12 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
     .company-mail {
         margin-top: 10px;
         margin-bottom: 10px;
+        padding-bottom: 0;
     }
 
     .fast-navigation, .aboutcompany {
         margin-bottom: 10px;
+        padding-bottom: 0;
     }
 }
 
