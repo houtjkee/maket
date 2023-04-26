@@ -1,4 +1,4 @@
-const menuToggle = document.querySelector('.menu-toggle');
+const menuToggle = document.querySelector('.menu__toggle');
 const menu = document.querySelector('.menu');
 
 menuToggle.addEventListener('click', function() {
@@ -15,11 +15,27 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
-    $('.categories-auto, .categories-tech, .categories-mobile, .categories-pc, .categories-clothes, .categories-realty').mouseenter(function(){
+    $('.categories__auto, .categories__tech, .categories__mobile, .categories__pc, .categories__clothes, .categories__realty').mouseenter(function(){
         $(this).find('ul').show();
     });
 
-    $('.categories-auto, .categories-tech, .categories-mobile, .categories-pc, .categories-clothes, .categories-realty').mouseleave(function(){
+    $('.categories__auto, .categories__tech, .categories__mobile, .categories__pc, .categories__clothes, .categories__realty').mouseleave(function(){
         $(this).find('ul').hide();
     });
 });
+
+
+
+$(document).ready(function() {
+    $('#ContactUs').click(function(event) {
+      event.preventDefault();
+      $('#MyModal').css("display", "flex").fadeIn(1000);
+      $('#MyModal').addClass('modal'); 
+    });
+  
+    $('.modal__close').click(function() {
+      $('#MyModal').fadeOut(500);
+    });
+  });
+
+
